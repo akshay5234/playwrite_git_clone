@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="All Package Tests(failed)">
+    <parameter name="Browsername" value="chrome"/>
+    <classes>
+      <class name="playwright_project.file_upload_without_input_tag">
+        <methods>
+          <include name="file_upload_without_input_tag1"/>
+        </methods>
+      </class> <!-- playwright_project.file_upload_without_input_tag -->
+      <class name="playwright_project.file_upload">
+        <methods>
+          <include name="file_upload1"/>
+        </methods>
+      </class> <!-- playwright_project.file_upload -->
+    </classes>
+  </test> <!-- All Package Tests(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

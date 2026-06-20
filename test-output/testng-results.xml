@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-20T09:29:25 IST" name="Suite" finished-at="2026-06-20T09:32:07 IST" duration-ms="161946">
+    <groups>
+    </groups>
+    <test started-at="2026-06-20T09:29:25 IST" name="chromeTest" finished-at="2026-06-20T09:30:12 IST" duration-ms="46837">
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3">
+        <test-method is-config="true" signature="setUPMethod(java.lang.String)[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@792b749c]" started-at="2026-06-20T09:29:25 IST" name="setUPMethod" finished-at="2026-06-20T09:29:29 IST" duration-ms="4694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUPMethod -->
+        <test-method signature="verify_product_details()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@792b749c]" started-at="2026-06-20T09:29:29 IST" name="verify_product_details" finished-at="2026-06-20T09:30:11 IST" duration-ms="41661" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//input[@id='twotabsearchtextbox']") to be visible
+-     - waiting for" https://www.amazon.in/ap/signin" navigation to finish...
+-     - navigated to "https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&openid.assoc_handle=inflex&pageId=inflex&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…"
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//input[@id='twotabsearchtextbox']") to be visible
+-     - waiting for" https://www.amazon.in/ap/signin" navigation to finish...
+-     - navigated to "https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&openid.assoc_handle=inflex&pageId=inflex&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…"
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
+at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:654)
+at com.microsoft.playwright.Locator.waitFor(Locator.java:5521)
+at a_Amazon_pomclass.AccountHomePage_pomclass.login(AccountHomePage_pomclass.java:25)
+at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//input[@id='twotabsearchtextbox']") to be visible
+-     - waiting for" https://www.amazon.in/ap/signin" navigation to finish...
+-     - navigated to "https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&openid.assoc_handle=inflex&pageId=inflex&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…"
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_details -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@792b749c]" started-at="2026-06-20T09:30:11 IST" name="teardown" finished-at="2026-06-20T09:30:12 IST" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- b_Amazon_testclass.verify_AddtoCart_Product_testclass3 -->
+    </test> <!-- chromeTest -->
+    <test started-at="2026-06-20T09:30:12 IST" name="firefoxtest" finished-at="2026-06-20T09:31:27 IST" duration-ms="75371">
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3">
+        <test-method is-config="true" signature="setUPMethod(java.lang.String)[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@6b09fb41]" started-at="2026-06-20T09:30:12 IST" name="setUPMethod" finished-at="2026-06-20T09:30:14 IST" duration-ms="2080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUPMethod -->
+        <test-method signature="verify_product_details()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@6b09fb41]" started-at="2026-06-20T09:30:14 IST" name="verify_product_details" finished-at="2026-06-20T09:31:27 IST" duration-ms="73075" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Timeout 30000ms exceeded]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.BrowserContextImpl.waitForEventWithTimeout(BrowserContextImpl.java:242)
+at com.microsoft.playwright.impl.BrowserContextImpl.waitForPageImpl(BrowserContextImpl.java:254)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$waitForPage$0(BrowserContextImpl.java:247)
+at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
+at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
+at com.microsoft.playwright.impl.BrowserContextImpl.waitForPage(BrowserContextImpl.java:247)
+at com.microsoft.playwright.BrowserContext.waitForPage(BrowserContext.java:1649)
+at a_Amazon_pomclass.ProductDetailsPage_pomclass.multiwindow(ProductDetailsPage_pomclass.java:39)
+at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_details -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@6b09fb41]" started-at="2026-06-20T09:31:27 IST" name="teardown" finished-at="2026-06-20T09:31:27 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- b_Amazon_testclass.verify_AddtoCart_Product_testclass3 -->
+    </test> <!-- firefoxtest -->
+    <test started-at="2026-06-20T09:31:27 IST" name="webkitTest" finished-at="2026-06-20T09:32:07 IST" duration-ms="39643">
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3">
+        <test-method is-config="true" signature="setUPMethod(java.lang.String)[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@3932c79a]" started-at="2026-06-20T09:31:27 IST" name="setUPMethod" finished-at="2026-06-20T09:31:29 IST" duration-ms="2142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUPMethod -->
+        <test-method signature="verify_product_details()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@3932c79a]" started-at="2026-06-20T09:31:29 IST" name="verify_product_details" finished-at="2026-06-20T09:32:06 IST" duration-ms="37258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_details -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:b_Amazon_testclass.verify_AddtoCart_Product_testclass3@3932c79a]" started-at="2026-06-20T09:32:06 IST" name="teardown" finished-at="2026-06-20T09:32:07 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- b_Amazon_testclass.verify_AddtoCart_Product_testclass3 -->
+    </test> <!-- webkitTest -->
+  </suite> <!-- Suite -->
+</testng-results>

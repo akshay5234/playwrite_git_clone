@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="Browsername" value="chrome"></parameter>
+  <test thread-count="5" name="chromeTest">
+    <classes>
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3"/>
+    </classes>
+  </test> 
+  <parameter name="Browsername" value="firefox"></parameter>
+  <test thread-count="5" name="firefoxtest">
+    <classes>
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3"/>
+    </classes>
+  </test> 
+  <parameter name="Browsername" value="webkit"></parameter>
+  <test thread-count="5" name="webkitTest">
+    <classes>
+      <class name="b_Amazon_testclass.verify_AddtoCart_Product_testclass3"/>
+    </classes>
+  </test> 
+  
+</suite> 

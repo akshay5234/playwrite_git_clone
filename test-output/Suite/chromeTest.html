@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>TestNG:  chromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 20 09:29:25 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>46 seconds (46837 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details()'><b>verify_product_details</b><br>Test class: b_Amazon_testclass.verify_AddtoCart_Product_testclass3</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:654)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5521)
+	at a_Amazon_pomclass.AccountHomePage_pomclass.login(AccountHomePage_pomclass.java:25)
+	at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 33 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221991240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221991240'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:654)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5521)
+	at a_Amazon_pomclass.AccountHomePage_pomclass.login(AccountHomePage_pomclass.java:25)
+	at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 33 more
+</pre></div></td>
+<td>41</td>
+<td>b_Amazon_testclass.verify_AddtoCart_Product_testclass3@792b749c</td></tr>
+</table><p>
+</body>
+</html>

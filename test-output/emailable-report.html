@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">chromeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">46,837</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefoxtest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">75,371</td><td></td><td></td></tr>
+<tr><td><a href="#t2">webkitTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,643</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">161,851</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">b_Amazon_testclass.verify_AddtoCart_Product_testclass3</td><td><a href="#m0">verify_product_details</a></td><td rowspan="1">1781927969997</td><td rowspan="1">41661</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefoxtest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">b_Amazon_testclass.verify_AddtoCart_Product_testclass3</td><td><a href="#m1">verify_product_details</a></td><td rowspan="1">1781928014240</td><td rowspan="1">73075</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">webkitTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">b_Amazon_testclass.verify_AddtoCart_Product_testclass3</td><td><a href="#m2">verify_product_details</a></td><td rowspan="1">1781928089700</td><td rowspan="1">37258</td></tr></tbody>
+</table>
+<h2>chromeTest</h2><h3 id="m0">b_Amazon_testclass.verify_AddtoCart_Product_testclass3#verify_product_details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:654)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5521)
+	at a_Amazon_pomclass.AccountHomePage_pomclass.login(AccountHomePage_pomclass.java:25)
+	at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\progress.js:92:28)
+    at FrameDispatcher._runCommand (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\SHREE\AppData\Local\Temp\playwright-java-3327328153170001069\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//input[@id=&apos;twotabsearchtextbox&apos;]&quot;) to be visible
+-     - waiting for&quot; https://www.amazon.in/ap/signin&quot; navigation to finish...
+-     - navigated to &quot;https://www.amazon.in/ap/cvf/transactionapproval?arb=3a5b54a3-23f2-47f6-8a37-b71d37c1a22a&amp;openid.assoc_handle=inflex&amp;pageId=inflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fap%2Fsignin%3Fie%3DUT…&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 33 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxtest</h2><h3 id="m1">b_Amazon_testclass.verify_AddtoCart_Product_testclass3#verify_product_details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForEventWithTimeout(BrowserContextImpl.java:242)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPageImpl(BrowserContextImpl.java:254)
+	at com.microsoft.playwright.impl.BrowserContextImpl.lambda$waitForPage$0(BrowserContextImpl.java:247)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPage(BrowserContextImpl.java:247)
+	at com.microsoft.playwright.BrowserContext.waitForPage(BrowserContext.java:1649)
+	at a_Amazon_pomclass.ProductDetailsPage_pomclass.multiwindow(ProductDetailsPage_pomclass.java:39)
+	at b_Amazon_testclass.verify_AddtoCart_Product_testclass3.verify_product_details(verify_AddtoCart_Product_testclass3.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>webkitTest</h2><h3 id="m2">b_Amazon_testclass.verify_AddtoCart_Product_testclass3#verify_product_details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
